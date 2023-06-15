@@ -13,7 +13,7 @@
 include './include/db_conn.php';
 $key          = rtrim($_POST['login_key']);
 $pass         = rtrim($_POST['pwfield']);
-$user_id_auth = rtrim($_POST['login_id']);
+$user_id_auth = rtrim($_POST['login_id']); 
 $passconfirm= rtrim($_POST['confirmfield']);
 if($pass==$passconfirm){
 if (isset($user_id_auth) && isset($pass) && isset($key)) {
